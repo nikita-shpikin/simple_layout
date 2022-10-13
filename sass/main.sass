@@ -1,0 +1,99 @@
+@import "vars"
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+	&:focus
+		outline: none
+
+*::-webkit-input-placeholder
+	color: #c0c0c0
+	opacity: 1
+
+*:-moz-placeholder
+	color: #c0c0c0
+	opacity: 1
+
+*::-moz-placeholder
+	color: #c0c0c0
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #c0c0c0
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #000
+body input:required:valid,
+body textarea:required:valid
+	color: #000
+
+html,body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default_font
+	overflow-x: hidden
+	opacity: 1
+
+img
+	max-width: 100%
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.btn_simple
+	background: #FFFFFF
+	border: 1px solid $accent
+	border-radius: 20px
+	color: $accent
+	text-decoration: none
+	padding: 6px 30px
+	font-weight: 600
+	transition: all .4s easy
+	&:hover
+		background-color: $accent
+		color: #fff
+
+#header
+	padding-top: 24px
+	.inner_header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		>.logo
+			display: block
+			width: 48px
+			height: 48px
+			>img
+				width: 100%
+		.right_side_header
+			display: flex
+			align-items: center		
+			.mnu_top
+				list-style-type: none 
+				>li
+					display: inline-block
+					margin-right: 40px
+					>a
+						display: block
+						text-decoration: none
+						font-weight: 500
+						color: #000
+						transition: color .4s ease
+						&:hover
+							color: $accent
+		
