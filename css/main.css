@@ -135,19 +135,59 @@ img {
 }
 #header .inner_header .right_side_header .mnu_top > li {
   display: inline-block;
-  margin-right: 40px;
+  position: relative;
 }
-#header .inner_header .right_side_header .mnu_top > li > a {
+#header .inner_header .right_side_header .mnu_top > li a {
+  padding: 0 40px 8px 0;
   display: block;
   text-decoration: none;
   font-weight: 500;
   color: #000;
   transition: color 0.4s ease;
 }
-#header .inner_header .right_side_header .mnu_top > li > a:hover {
+#header .inner_header .right_side_header .mnu_top > li a:hover {
   color: #722ED1;
 }
+#header .inner_header .right_side_header .mnu_top > li.has_sub_menu:hover > .sub_menu {
+  display: block;
+}
+#header .inner_header .right_side_header .mnu_top > li.has_sub_menu::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 7px;
+  background: no-repeat url("../img/main_banner/arrow.svg") center;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+#header .inner_header .right_side_header .mnu_top > li > .sub_menu {
+  position: absolute;
+  top: 35px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px;
+  z-index: 10;
+  border-radius: 5px;
+  padding: 5px 0;
+  animation: opac 0.6s;
+  display: none;
+}
+#header .inner_header .right_side_header .mnu_top > li > .sub_menu > li {
+  display: block;
+}
+#header .inner_header .right_side_header .mnu_top > li > .sub_menu > li > a {
+  padding: 3px 10px;
+  font-size: 14px;
+}
 
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .notif {
   max-width: 256px;
   background-color: #f9f0ff;

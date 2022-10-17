@@ -109,8 +109,9 @@ img
 				list-style-type: none 
 				>li
 					display: inline-block
-					margin-right: 40px
-					>a
+					position: relative
+					a
+						padding: 0 40px 8px 0
 						display: block
 						text-decoration: none
 						font-weight: 500
@@ -118,6 +119,42 @@ img
 						transition: color .4s ease
 						&:hover
 							color: $accent
+					&.has_sub_menu
+						&:hover > .sub_menu
+							display: block
+						&::after
+							content: ''
+							display: block
+							width: 9px
+							height: 7px
+							background: no-repeat url('../img/main_banner/arrow.svg') center
+							position: absolute
+							top: 10px
+							right: 20px
+					>.sub_menu
+						position: absolute
+						top: 35px
+						background-color: #fff
+						box-shadow: 0 3px 6px
+						z-index: 10
+						border-radius: 5px
+						padding: 5px 0
+						animation: opac .6s 
+						display: none
+						>li
+							display: block
+							>a
+								padding: 3px 10px
+								font-size: 14px
+
+@keyframes opac 
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+
+
 
 .notif
 	max-width: 256px
@@ -154,6 +191,5 @@ img
 			align-items: center
 			>.btn_white
 				margin-left: 16px
-
 
 
