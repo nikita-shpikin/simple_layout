@@ -42,10 +42,10 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
 	font-family: $default_font
 	overflow-x: hidden
 	opacity: 1
+	line-height: 1.5
 
 img
 	max-width: 100%
@@ -89,6 +89,53 @@ img
 #top_banner
 	background: linear-gradient(180deg, #FFFFFF 0%, #E2F1FF 100%)
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%)	
+
+.notif
+	max-width: max-content
+	background-color: $light_accent
+	border-radius: 30px
+	padding: 10px 25px
+	display: flex
+	align-items: center
+	img
+		width: 16px
+		height: auto
+		margin-right: 7px
+	p
+		color: $accent
+	a
+		transition: all .4s ease
+		text-decoration: none
+		border-bottom: 1px solid $accent
+		&:hover
+			color: darken($accent, 10%)
+
+.main_banner
+	padding: 200px 0
+	.mb_info
+		>h1
+			color: #160631
+			font-size: 48px
+			font-weight: 700
+		.descrip
+			color: $gray
+			margin: 14px 0 44px
+		.btns
+			display: flex
+			align-items: center
+			>.btn_white
+				margin-left: 16px
+
+@keyframes opac 
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+section
+	padding: 80px 0
+	&#top_banner
+		padding: 0
 
 #header
 	padding-top: 24px
@@ -147,49 +194,38 @@ img
 								padding: 3px 10px
 								font-size: 14px
 
-@keyframes opac 
-	from
-		opacity: 0
-	to
-		opacity: 1
-
-
-
-
-.notif
-	max-width: 256px
-	background-color: $light_accent
-	border-radius: 20px
-	padding: 10px 25px
-	display: flex
-	align-items: center
-	img
-		width: 16px
-		height: auto
-		margin-right: 7px
-	p
-		color: $accent
-	a
-		transition: all .4s ease
-		text-decoration: none
-		border-bottom: 1px solid $accent
-		&:hover
-			color: darken($accent, 10%)
-
-.main_banner
-	padding: 200px 0
-	.mb_info
-		>h1
-			color: #160631
-			font-size: 48px
-			font-weight: 700
-		.descrip
-			color: #8989A2
-			margin: 14px 0 44px
-		.btns
-			display: flex
-			align-items: center
-			>.btn_white
-				margin-left: 16px
-
-
+#advantages
+	.notif
+		margin: 0 auto
+		img
+			width: 26px
+			height: auto
+			margin-right: 7px
+	.heading_main
+		max-width: 500px
+		margin: 32px auto 48px
+		h2
+			color: $dark_accent
+			font-size: 38px
+			font-weight: 900
+			text-align: center
+			margin-bottom: 12px
+			line-height: 1.3
+		.description
+			text-align: center
+			color: $gray
+			font-size: 18px
+	.row-adv
+		>.item_adv
+			>img
+				width: 40px
+				height: 40px
+				border-radius: 50%
+			>.heading
+				color: $dark_accent
+				font-size: 24px
+				font-weight: 700
+				margin: 24px 0 16px
+			>.desc	
+				color: $gray
+				font-size: 18px
