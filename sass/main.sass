@@ -15,18 +15,25 @@
 *::-webkit-input-placeholder
 	color: #c0c0c0
 	opacity: 1
+	font-family: $default_font
 
 *:-moz-placeholder
 	color: #c0c0c0
 	opacity: 1
+	font-family: $default_font
 
 *::-moz-placeholder
 	color: #c0c0c0
 	opacity: 1
+	font-family: $default_font
 
 *:-ms-input-placeholder
 	color: #c0c0c0
 	opacity: 1
+	font-family: $default_font
+
+*::placeholder, button
+	font-family: $default_font
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -299,6 +306,21 @@ section.information
 				filter: opacity(1.0)
 				transform: scale(1.1)
 	
+.btn_form
+	background: $accent
+	box-shadow: 0 3px 6px rgba(0,0,0,.16)
+	width: 100%
+	cursor: pointer
+	padding: 14px
+	color: #fff
+	border: none
+	border-radius: 4px
+	outline: none
+	text-decoration: none
+	transition: border-radius .4s ease-in-out
+	&:hover
+		border-radius: 30px
+
 #pre_footer
 	.pf_info
 		>h4
@@ -310,6 +332,7 @@ section.information
 			display: block
 			margin: 0 42px
 		>.pf_images
+			margin-top: 30px
 			height: 170px
 			width: 460px
 			display: flex
@@ -319,3 +342,61 @@ section.information
 				display: block
 				margin: 0 auto
 				width: 46%
+	.form_wrapper
+		background: #F9F0FF
+		border-radius: 8px
+		max-width: 480px	
+		margin: 0 auto
+		>form
+			padding: 36px 36px 24px
+			margin: 0 auto
+			width: 80%
+			border: solid 1px #F9F0FF
+			background: #fff
+			box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122)
+			border-radius: 8px
+			transform: translateY(-40px)
+			text-align: center
+			>h4
+				color: $dark_accent
+				font-size: 24px
+				margin-bottom: 32px
+				font-weight: 900
+			>input
+				transition: border-color .4s ease-in out	
+				font-size: 16px
+				outline: none
+				background-color: #fff
+				width: 100%
+				border-radius: 4px
+				margin-bottom: 16px
+				padding: 14px 24px 14px
+				border: 1px solid rgba(137, 137, 162, .5)
+				&:focus
+					border-color: lighten($accent, 10%)
+				&:placeholder
+					color: $gray
+					font-size: 16px
+			>.or
+				text-align: center
+				margin: 20px auto 15px
+				color: #111
+				text-transform: uppercase
+			>a
+				display: block
+				max-width: 200px
+				margin: 0 auto
+				text-decoration: none
+			>.footer_form
+				>.line
+					height: 1px
+					width: 100%
+					background-color: rgba(137, 137, 162, .5)
+					margin: 22px 0
+				>p
+					font-size: 14px
+					color: $gray
+					>a
+						color: #1563ff
+
+	
