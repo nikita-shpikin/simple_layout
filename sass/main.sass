@@ -256,7 +256,12 @@ section.information
 	padding: 200px 0
 	.item_rev
 		text-align: center
+		display: none
+		animation: opac .9s
+		&.active
+			display: block
 		>.quotes
+			height: 100px
 			max-width: 660px
 			color: $dark_accent
 			font-size: 22px

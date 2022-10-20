@@ -310,8 +310,14 @@ section.information .right_info > .desc {
 }
 #reviews .item_rev {
   text-align: center;
+  display: none;
+  animation: opac 0.9s;
+}
+#reviews .item_rev.active {
+  display: block;
 }
 #reviews .item_rev > .quotes {
+  height: 100px;
   max-width: 660px;
   color: #160637;
   font-size: 22px;
