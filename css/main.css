@@ -362,4 +362,27 @@ section.information .right_info > .desc {
   transform: scale(1.1);
 }
 
+#pre_footer .pf_info > h4 {
+  color: #160637;
+  font-weight: 900;
+  font-size: 38px;
+  text-align: center;
+}
+#pre_footer .pf_info > img {
+  display: block;
+  margin: 0 42px;
+}
+#pre_footer .pf_info > .pf_images {
+  height: 170px;
+  width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#pre_footer .pf_info > .pf_images > img {
+  display: block;
+  margin: 0 auto;
+  width: 46%;
+}
+
 /*# sourceMappingURL=main.css.map */
