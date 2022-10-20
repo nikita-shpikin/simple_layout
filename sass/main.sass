@@ -250,4 +250,48 @@ section.information
 			color: $gray
 			font-size: 16px
 
-
+#reviews	
+	background: linear-gradient(175.54deg, #F9F0FF 25.81%, #E2F1FF 96.38%)
+	clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%)
+	padding: 200px 0
+	.item_rev
+		text-align: center
+		>.quotes
+			max-width: 660px
+			color: $dark_accent
+			font-size: 22px
+			margin:0 auto 16px
+		>img
+			width: 80px
+			height: 80px
+			border-radius: 50%	
+		.name
+			margin-top: 16px
+		>.name, >.position
+			color: #111
+			font-weight: 900
+	.line
+		height: 1px
+		width: 100%
+		background-color: #DEC9FA
+		margin: 55px 0
+	.nav_rev
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+		text-align: center
+		>div
+			display: flex
+			justify-content: center
+			align-items: center
+			cursor: pointer
+			width: 16%
+			// filter: grayscale(100%)
+			filter: opacity(0.4)
+			transition: all .4s ease
+			&.active
+				filter: opacity(1.0)
+				transform: scale(1.1)
+	
+				

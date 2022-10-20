@@ -303,4 +303,57 @@ section.information .right_info > .desc {
   font-size: 16px;
 }
 
+#reviews {
+  background: linear-gradient(175.54deg, #F9F0FF 25.81%, #E2F1FF 96.38%);
+  clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+  padding: 200px 0;
+}
+#reviews .item_rev {
+  text-align: center;
+}
+#reviews .item_rev > .quotes {
+  max-width: 660px;
+  color: #160637;
+  font-size: 22px;
+  margin: 0 auto 16px;
+}
+#reviews .item_rev > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+#reviews .item_rev .name {
+  margin-top: 16px;
+}
+#reviews .item_rev > .name, #reviews .item_rev > .position {
+  color: #111;
+  font-weight: 900;
+}
+#reviews .line {
+  height: 1px;
+  width: 100%;
+  background-color: #DEC9FA;
+  margin: 55px 0;
+}
+#reviews .nav_rev {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#reviews .nav_rev > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 16%;
+  filter: opacity(0.4);
+  transition: all 0.4s ease;
+}
+#reviews .nav_rev > div.active {
+  filter: opacity(1);
+  transform: scale(1.1);
+}
+
 /*# sourceMappingURL=main.css.map */
