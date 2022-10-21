@@ -395,7 +395,7 @@ section.information .right_info > .desc {
 }
 #pre_footer .pf_info > img {
   display: block;
-  margin: 0 42px;
+  margin: 15px auto 42px;
 }
 #pre_footer .pf_info > .pf_images {
   margin-top: 30px;
