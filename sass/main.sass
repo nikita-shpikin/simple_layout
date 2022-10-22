@@ -1,4 +1,5 @@
-@import "vars"
+@import ./_vars
+
 *
 	margin: 0
 	padding: 0
@@ -70,7 +71,7 @@ img
 	text-decoration: none
 	padding: 6px 30px
 	font-weight: 600
-	transition: all .4s easy
+	transition: all .4s ease
 	&:hover
 		background-color: $accent
 		color: #fff
@@ -228,18 +229,18 @@ section
 			text-align: center
 			color: $gray
 			font-size: 18px
-	.row-adv
-		>.item_adv
-			>img
+	.row_adv
+		.item_adv
+			img
 				width: 40px
 				height: 40px
 				border-radius: 50%
-			>.heading
+			.heading
 				color: $dark_accent
 				font-size: 24px
 				font-weight: 700
 				margin: 24px 0 16px
-			>.desc	
+			.desc	
 				color: $gray
 				font-size: 18px
 
@@ -418,15 +419,17 @@ section.information
 			>li
 				display: inline-block
 				margin-right: 16px
-				transition: transform .5s ease
-				&:hover
-					transform: translateY(-8px)
 				>a
 					display: flex
 					align-items: center
 					justify-content: center
 					width: 16px
 					height: 16px
+					>img
+						transition: transform .5s ease
+						&:hover
+							transform: translateY(-8px)
+
 				&:last-child
 					margin-right: 0
 	.mnu_footer_wrapper
@@ -441,7 +444,7 @@ section.information
 				>li
 					display: block
 					>a
-						font-size: 13px
+						font-size: 13	px
 						padding: 7px 0
 						display: block
 						text-decoration: none

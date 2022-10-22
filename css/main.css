@@ -84,7 +84,7 @@ img {
   text-decoration: none;
   padding: 6px 30px;
   font-weight: 600;
-  transition: all 0.4s easy;
+  transition: all 0.4s ease;
 }
 .btn_simple:hover {
   background-color: #722ED1;
@@ -278,18 +278,18 @@ section#top_banner {
   color: #8989a2;
   font-size: 18px;
 }
-#advantages .row-adv > .item_adv > img {
+#advantages .row_adv .item_adv img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-#advantages .row-adv > .item_adv > .heading {
+#advantages .row_adv .item_adv .heading {
   color: #160637;
   font-size: 24px;
   font-weight: 700;
   margin: 24px 0 16px;
 }
-#advantages .row-adv > .item_adv > .desc {
+#advantages .row_adv .item_adv .desc {
   color: #8989a2;
   font-size: 18px;
 }
@@ -500,10 +500,6 @@ section.information .right_info > .desc {
 #footer .logo_info > .social > li {
   display: inline-block;
   margin-right: 16px;
-  transition: transform 0.5s ease;
-}
-#footer .logo_info > .social > li:hover {
-  transform: translateY(-8px);
 }
 #footer .logo_info > .social > li > a {
   display: flex;
@@ -511,6 +507,12 @@ section.information .right_info > .desc {
   justify-content: center;
   width: 16px;
   height: 16px;
+}
+#footer .logo_info > .social > li > a > img {
+  transition: transform 0.5s ease;
+}
+#footer .logo_info > .social > li > a > img:hover {
+  transform: translateY(-8px);
 }
 #footer .logo_info > .social > li:last-child {
   margin-right: 0;
@@ -531,7 +533,7 @@ section.information .right_info > .desc {
   display: block;
 }
 #footer .mnu_footer_wrapper > .mnu_footer > ul > li > a {
-  font-size: 13px;
+  font-size: 13 px;
   padding: 7px 0;
   display: block;
   text-decoration: none;
