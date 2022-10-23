@@ -105,13 +105,114 @@
 			font-size: 14px
 
 	section
-		padding: 60 0
+		padding: 60px 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
+	.hamburger
+		display: block
 	
+	#header 
+		padding-top: 14px
+		position: relative
+		.inner_header .right_side_header .mnu_top
+			display: none
+			position: absolute
+			width: 100%
+			box-shadow: 0px 3px 6px rgba(0,0,0,0.5)
+			background-color: #fff
+			padding: 10px 0
+			z-index: 1
+			left: 0
+			top: 70px
+			>li
+				display: block
+				>a
+					padding: 5px 15px
+				>.sub_menu
+					display: block
+					position: relative
+					top: auto
+					box-shadow: none
+					border-radius: 0
+					animation: none
+					padding-left: 15px
+
+	#top_banner
+		clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%)
+	.main_banner	
+		padding: 18px 0 80px
+
+	#header .inner_header .right_side_header .mnu_top > li.has_sub_menu::after
+		display: none
+
+	.main_banner .mb_info > h1
+		font-size: 30px
+		text-align: center
+
+	.main_banner .mb_info .descrip
+		font-size: 14px
+		text-align: center
+
+	.main_banner .mb_info .btns
+		flex-wrap: wrap
+		>.btn
+			text-align: center
+			width: 100%
+		>.btn_white
+			margin-top: 10px
+			margin-left: 0
+
+	#advantages .heading_main h2
+		font-size: 26px
+
+	#advantages .heading_main .description
+		font-size: 14px	
+
+	.row_adv > div
+		width: 100%
+		margin-bottom: 15px
+		&:last-child
+			margin-bottom: 0
+
+	#reviews
+		padding: 100px 0
+		clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%)
+
+	#reviews .nav_rev 
+		justify-content: space-evenly
+	#reviews .nav_rev > div
+		width: 30%
+		&:nth-child(4n)
+			height: 30px
+		&:nth-child(5n)
+			height: 30px
+
+		>img
+			height: 100%
+
+	section.information .right_info > h3
+		font-size: 25px
+
+	#pre_footer .pf_info > .pf_images	
+		width: 100%
+	
+	#pre_footer .form_wrapper > form
+		width: 100%
+
+	#footer .logo_info > .desc
+		display: none
+
+	#footer .mnu_footer_wrapper > .mnu_footer
+		width: 45%
+		margin-bottom: 15px
+
+	#pre_footer .pf_info > h4
+		font-size: 24px
+
+	section
+		padding: 30px 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

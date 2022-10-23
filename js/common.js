@@ -1,6 +1,6 @@
 $(function () {
 	new WOW().init();
-
+	//меню для мобилки гамбургер
 	$('.hamburger').click(function () {
 		$(this).toggleClass('is-active');
 
