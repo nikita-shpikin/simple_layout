@@ -82,7 +82,7 @@ img
 	color: #fff
 	text-decoration: none
 	padding: 14px 40px
-	transition: all .4s easy
+	transition: all .4s ease
 	box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
 	&:hover
 		background-color: #fff
@@ -173,7 +173,7 @@ section
 					display: inline-block
 					position: relative
 					a
-						padding: 0 40px 8px 0
+						padding: 0 40px 10px 0
 						display: block
 						text-decoration: none
 						font-weight: 500
@@ -518,5 +518,13 @@ section.information
 			transform: translateY(-9px) rotate(-45deg)
 						
 		
+.animate_graphic
+	animation: 2s infinite alternate MovingAn
 
+@keyframes MovingAn 
+	from
+		transform: translateX(0)
+	to
+		transform: translateX(10px)
+	
 

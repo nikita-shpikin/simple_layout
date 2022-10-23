@@ -1,5 +1,7 @@
 $(function () {
+	//анимация
 	new WOW().init();
+
 	//меню для мобилки гамбургер
 	$('.hamburger').click(function () {
 		$(this).toggleClass('is-active');
@@ -21,5 +23,25 @@ $(function () {
 
 		$('.item_rev').not(revId).removeClass('active');
 		$(revId).addClass('active');
+	});
+
+	//Якорь
+	$('.yakor').on('click', function (event) {
+		let $ancor = $(this);
+		$('html, body')
+			.stop()
+			.animate(
+				{
+					scrollTop: $($ancor.attr('href')).offset().top - 57,
+				},
+				{
+					duration: 2000,
+					specialEasing: {
+						width: 'linear',
+						height: 'easeInOutCubic',
+					},
+				}
+			);
+		event.preventDefault();
 	});
 });
