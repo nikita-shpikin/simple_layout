@@ -434,7 +434,7 @@ section.information .right_info > .desc {
   font-weight: 900;
 }
 #pre_footer .form_wrapper > form > input {
-  transition: border-color 0.4s ease-in out;
+  transition: border-color 0.4s ease-in-out;
   font-size: 16px;
   outline: none;
   background-color: #fff;
@@ -447,7 +447,7 @@ section.information .right_info > .desc {
 #pre_footer .form_wrapper > form > input:focus {
   border-color: #8e58da;
 }
-#pre_footer .form_wrapper > form > input:placeholder {
+#pre_footer .form_wrapper > form > input::placeholder {
   color: #8989a2;
   font-size: 16px;
 }
@@ -492,7 +492,7 @@ section.information .right_info > .desc {
   line-height: 1.65;
   color: #160637;
   font-size: 14px;
-  margin: 16 0;
+  margin: 16px 0;
 }
 #footer .logo_info > .social {
   list-style-type: none;
@@ -533,7 +533,7 @@ section.information .right_info > .desc {
   display: block;
 }
 #footer .mnu_footer_wrapper > .mnu_footer > ul > li > a {
-  font-size: 13 px;
+  font-size: 13px;
   padding: 7px 0;
   display: block;
   text-decoration: none;
@@ -562,11 +562,10 @@ section.information .right_info > .desc {
   display: block;
   border: none;
   background-color: transparent;
-  output: none;
   max-width: 100%;
   padding: 12px 16px;
 }
-#footer .newsletter > form > input:placeholder-shown {
+#footer .newsletter > form > input::placeholder {
   color: #8989a2;
   font-size: 14px;
 }
